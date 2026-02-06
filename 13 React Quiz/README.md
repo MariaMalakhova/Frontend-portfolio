@@ -1,22 +1,29 @@
-```md
 # React Quiz — Countdown & Scoring
-*(quiz with countdown and scoring)*
 
-A timed quiz app that shows questions with a per-question countdown and displays a final score.
+Timed quiz app with per-question countdown and final score summary.
 
 ## What it is
-Quiz interface with question timer, scoring, progress, and end-of-quiz summary. Good for demonstrating controlled forms, timers, optimistic UI and state transitions.
+
+Quiz interface with question timer, scoring, progress, and end-of-quiz summary. Demonstrates controlled forms, timers, and state transitions.
 
 ## Features
+
 - Questions with per-question countdown
 - Skip / next / submit behavior
 - Final score summary and breakdown
 
 ## Tech
-React, hooks
+
+- React 19, React DOM
+- Vite
+- React hooks (state, refs, effects)
 
 ## Run locally
+
+From the repo root:
+
 ```bash
-cd projects/{react-quiz-countdown}
+cd "13 React Quiz"
 npm install
 npm run dev
+```

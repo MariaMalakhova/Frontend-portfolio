@@ -1,22 +1,29 @@
-```md
-# PlacePicker — Side Effects & Effects Management
- *(side-effects / maps / effects demo)*
+# Placepicker — Side Effects & Effects Management
 
-Interactive location picker demonstrating side-effect handling (geolocation, async calls) and effect cleanup.
+Interactive location picker demonstrating side-effect handling (geolocation, async logic) and effect cleanup.
 
 ## What it is
-A small app where users can search for places, pick one on a map, and see details. Focused on managing async effects, cancellation, and performance optimisations.
+
+A small app where users can search for places, pick one, and see details. Focused on managing async effects, cancellation, and cleanup on unmount or query change.
 
 ## Features
-- Simulated/place API lookup
-- Geolocation permission flow
+
+- Simulated place lookup
+- Geolocation permission flow (Browser Geolocation API)
 - Clean effect cancellation on unmount or query change
 
 ## Tech
-React, RTK Query or fetch, Leaflet or simple mock map
+
+- React 19, React DOM
+- Vite
+- `useEffect` / side-effect patterns, Browser Geolocation API
 
 ## Run locally
+
+From the repo root:
+
 ```bash
-cd projects/{placepicker-side-effects}
+cd "11 Placepicker (Side Effects)"
 npm install
 npm run dev
+```

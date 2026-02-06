@@ -1,23 +1,39 @@
-```md
 # Food Order — Cards, Cart & Checkout
-(food order: cards, cart, order form)
 
-Mini e-commerce style demo focused on UI, state, forms, and checkout flow.
+Mini e-commerce style demo: dish cards, cart, and checkout flow with a small backend API.
 
 ## What it is
-A food ordering UI presenting dish cards, add-to-cart behavior, cart summary and a checkout form. Demonstrates state management, forms validation, and simple client-side persistence.
+
+A food ordering UI with dish cards, add-to-cart, cart summary, and a checkout form. Demonstrates Context-based state, forms, and HTTP requests to a local backend.
 
 ## Features
+
 - Dish cards with details and add-to-cart
 - Cart with quantity update & remove
 - Checkout form with validation
-- Order summary and local mock "submit"
+- Order submission to backend API
 
 ## Tech
-React, Context, React Hook Form
+
+- **Frontend:** React 19, React DOM, Context API, Vite
+- **Backend:** Express, body-parser (in `backend/`)
 
 ## Run locally
+
+From the repo root:
+
+**Frontend:**
+
 ```bash
-cd projects/{food-order}
+cd "18 Food Order"
 npm install
 npm run dev
+```
+
+**Backend** (separate terminal):
+
+```bash
+cd "18 Food Order/backend"
+npm install
+npm start
+```
