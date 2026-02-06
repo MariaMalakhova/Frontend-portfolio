@@ -1,2 +1,20 @@
-# Frontend-portfolio
-A collection of small frontend demo projects showcasing React, TypeScript, Next.js, state management, real-time UI, and testing. Each project focuses on a specific concept or feature and is easy to run locally.
+# Tic Tac Toe
+
+Small React demo implementing the classic Tic Tac Toe game with a focus on component design and game logic.
+
+## What it is
+A playable Tic Tac Toe game with single-session win/draw detection. Good demo for component structure, state management.
+
+## Features
+- 2-player local mode (player vs player)
+- Win / draw detection
+- Move history & jump-to-move
+
+## Tech
+React, Vite
+
+## Run locally
+```bash
+cd projects/tic-tac-toe
+npm install
+npm run dev
