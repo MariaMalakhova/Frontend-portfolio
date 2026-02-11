@@ -33,7 +33,9 @@ export class ProjectList
     const projectId = event.dataTransfer!.getData('text/plain');
     projectState.moveProject(
       projectId,
-      this.type === 'active' ? PROJECT_STATUS.Active : PROJECT_STATUS.Finished,
+      this.type === 'active'
+        ? PROJECT_STATUS.Active
+        : PROJECT_STATUS.Finished,
     );
   }
 

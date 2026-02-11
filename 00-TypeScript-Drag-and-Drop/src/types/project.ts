@@ -1,7 +1,6 @@
-export enum PROJECT_STATUS {
-  Active,
-  Finished,
-}
+import { PROJECT_STATUS } from '../enum/PROJECT_STATUS.js';
+
+export { PROJECT_STATUS };
 
 export class Project {
   constructor(
