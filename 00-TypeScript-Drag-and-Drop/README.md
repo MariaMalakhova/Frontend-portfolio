@@ -13,8 +13,7 @@ A small project management app built with **TypeScript**. Add projects, assign p
 
 - **TypeScript** (strict mode, decorators)
 - **Vanilla DOM** — No framework; template-based rendering
-- **esbuild** — Fast bundle for the browser
-- **lite-server** — Local dev server
+- **Webpack** — Bundle (ts-loader) and dev server
 
 ## Project Structure
 
@@ -44,19 +43,19 @@ src/
 # Install dependencies
 npm install
 
-# Build and run (builds with esbuild, serves with lite-server)
+# Run dev server (Webpack dev server with live reload)
 npm start
 ```
 
-Then open the URL shown in the terminal (usually `http://localhost:3000`).
+Then open the URL shown in the terminal (e.g. `http://localhost:8080`).
 
-**Build only:**
+**Production build:**
 
 ```bash
 npm run build
 ```
 
-Output is a single `dist/app.js` bundle loaded by `index.html`.
+Output is written to `dist/` and loaded by `index.html`.
 
 ## License
 

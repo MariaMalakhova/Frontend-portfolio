@@ -1,12 +1,12 @@
 {
-  "name": "understanding-typescript",
+  "name": "webpack-typescript",
   "version": "1.0.0",
-  "description": "Understanding TypeScript Course Setup",
+  "description": "Webpack TypeScript Course Setup",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "npm run build && lite-server"
+    "build": "webpack --config webpack.config.prod.js",
+    "start": "webpack-dev-server"
   },
   "keywords": [
     "typescript",
@@ -15,7 +15,13 @@
   "author": "Maria Malakhova",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "esbuild": "^0.24.0",
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "webpack": "^5.105.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
   }
 }
