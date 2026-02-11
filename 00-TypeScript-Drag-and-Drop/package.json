@@ -1,0 +1,21 @@
+{
+  "name": "understanding-typescript",
+  "version": "1.0.0",
+  "description": "Understanding TypeScript Course Setup",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/app.ts --bundle --outfile=dist/app.js --format=iife",
+    "start": "npm run build && lite-server"
+  },
+  "keywords": [
+    "typescript",
+    "course"
+  ],
+  "author": "Maria Malakhova",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "lite-server": "^2.5.4"
+  }
+}
