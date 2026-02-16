@@ -1,0 +1,73 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.field {
+  min-width: 0;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.input,
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.cancelButton {
+  flex: 1;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  color: #424242;
+}
+
+.submitButton {
+  flex: 1;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #212121;
+  color: #fff;
+}
+
+/* Web / desktop: currency + date side by side */
+@media (min-width: 768px) {
+  .fieldGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}

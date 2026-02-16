@@ -1,0 +1,41 @@
+[
+  {
+    "id": "qtngmew94jcmlp0i0q3",
+    "type": "income",
+    "amount": 24000,
+    "currency": "PLN",
+    "date": "2026-02-16",
+    "categoryId": "other",
+    "merchant": "Salary",
+    "note": null,
+    "createdAt": "2026-02-16T10:08:54.315Z",
+    "updatedAt": "2026-02-16T12:54:50.500Z",
+    "receiptPath": null
+  },
+  {
+    "id": "mco3eviersbmlp11175",
+    "type": "expense",
+    "amount": 200,
+    "currency": "PLN",
+    "date": "2026-02-16",
+    "categoryId": "food",
+    "merchant": "Biedronka",
+    "note": null,
+    "createdAt": "2026-02-16T10:23:41.393Z",
+    "updatedAt": "2026-02-16T10:23:41.393Z",
+    "receiptPath": null
+  },
+  {
+    "id": "2io5z4c2nrtmlp1qc1y",
+    "type": "expense",
+    "amount": 245,
+    "currency": "PLN",
+    "date": "2026-02-15",
+    "categoryId": "entertainment",
+    "merchant": "Patisserie",
+    "note": null,
+    "createdAt": "2026-02-16T10:43:21.861Z",
+    "updatedAt": "2026-02-16T13:20:39.716Z",
+    "receiptPath": null
+  }
+]

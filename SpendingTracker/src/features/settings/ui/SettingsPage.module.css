@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  width: 100%;
+}
+
+.sectionTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.description {
+  font-size: 1rem;
+  color: #616161;
+  margin-bottom: 0.5rem;
+}
+
+/* Web / desktop */
+@media (min-width: 768px) {
+  .page {
+    gap: 28px;
+  }
+}

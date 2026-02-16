@@ -1,0 +1,34 @@
+/* Mobile: bottom nav, narrow content */
+.wrapper {
+  min-height: 100dvh;
+  background-color: #fafafa;
+  padding-bottom: 80px;
+}
+
+.main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+
+@media (min-width: 600px) {
+  .main {
+    max-width: 480px;
+  }
+}
+
+/* Desktop: sidebar + main content (class applied by JS when sm+) */
+.wrapperDesktop {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: #fafafa;
+  display: flex;
+}
+
+.mainDesktop {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 24px;
+  overflow: auto;
+}

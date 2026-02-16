@@ -1,0 +1,153 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fileLabel {
+  display: block;
+}
+
+.fileLabelText {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.fileInput {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  color: #757575;
+}
+
+.fileInput::file-selector-button {
+  margin-right: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.preview {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.scanButton {
+  width: 100%;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #212121;
+  color: #fff;
+}
+
+.scanButton:disabled {
+  opacity: 0.5;
+}
+
+.progress {
+  font-size: 1rem;
+  color: #616161;
+}
+
+.error {
+  border-radius: 12px;
+  border: 1px solid #ffcdd2;
+  background: #ffebee;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #c62828;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.reviewTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+.reviewLabel {
+  display: block;
+  font-size: 1rem;
+}
+
+.reviewInput,
+.reviewSelect {
+  margin-top: 4px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.reviewActions {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.discardButton {
+  flex: 1;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  color: #424242;
+}
+
+.saveButton {
+  flex: 1;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #212121;
+  color: #fff;
+}
+
+.saveButton:disabled {
+  opacity: 0.5;
+}
+
+/* Web / desktop */
+@media (min-width: 768px) {
+  .page {
+    gap: 20px;
+  }
+
+  .preview {
+    max-width: 100%;
+  }
+
+  .review {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .reviewActions {
+    gap: 12px;
+  }
+}

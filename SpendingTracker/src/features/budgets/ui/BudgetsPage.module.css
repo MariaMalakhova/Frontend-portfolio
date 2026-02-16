@@ -1,0 +1,108 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+  width: 100%;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #616161;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.item {
+  min-width: 0;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.itemTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #212121;
+}
+
+.itemMeta {
+  font-size: 1rem;
+  color: #616161;
+}
+
+.progressTrack {
+  height: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.2s;
+}
+
+.progressBar.over {
+  background-color: #f44336;
+}
+
+.progressBar.under {
+  background-color: #4caf50;
+}
+
+.budgetInput {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+/* Web / desktop */
+@media (min-width: 768px) {
+  .page {
+    gap: 28px;
+  }
+
+  .list {
+    gap: 16px;
+  }
+
+  .item {
+    padding: 20px;
+  }
+
+  .itemHeader {
+    margin-bottom: 10px;
+  }
+
+  .progressTrack {
+    margin-bottom: 10px;
+  }
+
+  .budgetInput {
+    padding: 0.5rem 1rem;
+  }
+}

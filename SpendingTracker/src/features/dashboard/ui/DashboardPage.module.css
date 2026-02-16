@@ -1,0 +1,56 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  width: 100%;
+}
+
+.cardSpent {
+  background-color: #ffebee;
+}
+
+.cardIncome {
+  background-color: #e8f5e9;
+}
+
+.cardNet {
+  background-color: #e3f2fd;
+}
+
+.cardContent {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.cardContent:last-child {
+  padding-bottom: 12px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.categoryItem {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.recentItem {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.amountError {
+  font-weight: 600;
+  color: #d32f2f;
+}
+
+.amountSuccess {
+  font-weight: 600;
+  color: #2e7d32;
+}
